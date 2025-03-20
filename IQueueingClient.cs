@@ -15,7 +15,7 @@ namespace Grammophone.Queueing
 		/// Attempot to receive a message in a non-clocking way, or return null if there is no message available.
 		/// </summary>
 		/// <param name="cancellationToken">A token to cancel the operation.</param>
-		Task<IQueuedMessage?> TryReceiveMessage(CancellationToken cancellationToken = default);
+		Task<IQueuedMessage?> TryReceiveMessageAsync(CancellationToken cancellationToken = default);
 
 		/// <summary>
 		/// Sends a message to the queue with the specified data.
