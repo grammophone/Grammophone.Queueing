@@ -17,6 +17,11 @@ namespace Grammophone.Queueing
 		BinaryData Body { get; }
 
 		/// <summary>
+		/// The time, in UTC, where the message was sent.
+		/// </summary>
+		DateTime IssueTime { get; }
+
+		/// <summary>
 		/// Attempts to commit the message, removing it from the queue.
 		/// </summary>
 		/// <param name="cancellationToken">A token to cancel the operation.</param>
